@@ -20,6 +20,8 @@ qt_add_qml_module(appCanprocess
     SOURCES
         test_for_IC2/SpeedController2.h  # 소스 파일 경로 수정
         test_for_IC2/SpeedController2.cpp
+        test_for_IC2/battery.h  # 소스 파일 경로 수정
+        test_for_IC2/battery.cpp
     QML_FILES 
         test_for_IC2/Cluster.qml   # QML 파일 경로 수정
     RESOURCES
@@ -49,7 +51,7 @@ set_target_properties(appCanprocess PROPERTIES
 target_link_libraries(appCanprocess
     PRIVATE Qt6::Quick Qt6::DBus
 )
-include_directories(test_for_IC2)
+# include_directories(test_for_IC2)
 include(GNUInstallDirs)
 install(TARGETS appCanprocess
     BUNDLE DESTINATION .
