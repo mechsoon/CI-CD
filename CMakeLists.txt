@@ -49,7 +49,7 @@ set_target_properties(appCanprocess PROPERTIES
 target_link_libraries(appCanprocess
     PRIVATE Qt6::Quick Qt6::DBus
 )
-
+include_directories(test_for_IC2)
 include(GNUInstallDirs)
 install(TARGETS appCanprocess
     BUNDLE DESTINATION .
