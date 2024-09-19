@@ -55,6 +55,6 @@ jobs:
         name: build-artifacts
         path: |
           build/appCanprocess
-          build/*.qml
-          build/*.png
+          build/test_for_IC2/*.qml
+          
 
